@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="256" y2="256" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B132B"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+    <linearGradient id="tvScreen" x1="44" y1="64" x2="212" y2="176" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0EA5E9"/>
+      <stop offset="100%" stop-color="#4F46E5"/>
+    </linearGradient>
+    <linearGradient id="accentGlow" x1="60" y1="50" x2="196" y2="190" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo redondeado -->
+  <rect width="256" height="256" rx="52" fill="url(#bgGrad)"/>
+  <rect x="8" y="8" width="240" height="240" rx="46" stroke="url(#accentGlow)" stroke-width="4" stroke-opacity="0.45"/>
+
+  <!-- Antenas / Señal Vectorial Superior -->
+  <path d="M98 34L128 60L158 34" stroke="#38BDF8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="98" cy="34" r="6" fill="#FACC15"/>
+  <circle cx="158" cy="34" r="6" fill="#FACC15"/>
+
+  <!-- Cuerpo del Smart TV -->
+  <rect x="34" y="60" width="188" height="122" rx="20" fill="#0F172A" stroke="url(#accentGlow)" stroke-width="7"/>
+  <!-- Pantalla Interna -->
+  <rect x="46" y="72" width="164" height="98" rx="12" fill="url(#tvScreen)"/>
+
+  <!-- Símbolo Play + Ondas en la pantalla -->
+  <path d="M114 99L152 121L114 143V99Z" fill="#FFFFFF"/>
+  <circle cx="186" cy="90" r="6" fill="#FACC15"/>
+
+  <!-- Soporte / Base del Smart TV -->
+  <path d="M112 184H144L152 206H104L112 184Z" fill="#38BDF8"/>
+  <rect x="82" y="204" width="92" height="10" rx="5" fill="url(#accentGlow)"/>
+</svg>

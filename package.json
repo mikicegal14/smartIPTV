@@ -1,0 +1,30 @@
+{
+  "name": "smart-iptv-webos",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Smart IPTV Application for LG webOS Smart TVs with Magic Remote & HLS support",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host",
+    "test": "vitest",
+    "package:webos": "npm run build && ares-package dist --no-minify",
+    "deploy:tv": "npm run package:webos && ares-install --device mitv com.smartiptv.webos.app_1.0.0_all.ipk && ares-launch --device mitv com.smartiptv.webos.app"
+  },
+  "dependencies": {
+    "hls.js": "^1.5.17",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "@webos-tools/cli": "^3.2.6",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.1",
+    "vitest": "^2.1.8"
+  }
+}

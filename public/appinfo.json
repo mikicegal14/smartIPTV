@@ -1,0 +1,17 @@
+{
+  "id": "com.smartiptv.webos.app",
+  "version": "1.0.0",
+  "vendor": "SmartIPTV",
+  "type": "web",
+  "main": "index.html",
+  "title": "Smart IPTV",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png",
+  "splashBackground": "splash.png",
+  "resolution": "1920x1080",
+  "transparent": false,
+  "disableBackHistoryAPI": true,
+  "handlesRelaunch": false,
+  "bgColor": "#070b14",
+  "requiredACG": []
+}
